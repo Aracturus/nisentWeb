@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: #6c757d;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold !important;
+  font-size: 14px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item {
+  font-family: "Ubuntu", sans-serif;
+}
+.btn-style {
+  background: #8cc63f;
+  padding: 9px 40px;
+  font-size: 14px !important;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-style-btn {
+  background: #8cc63f;
+  padding: 9px 30px;
+  font-size: 14px !important;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-style:hover {
+  transform: scale(1.03);
+}
+.btn-style-btn:hover {
+  transform: scale(1.03);
+}
+.nav-link {
+  color: white !important;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  color: #8cc63f !important;
+}
+.active {
+  color: #8cc63f !important;
+}
+.number {
+  letter-spacing: 3px;
+  font-size: 13px !important;
+}
+.rounded-btn {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+}
+.main-heading {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.main-paragraph {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 2em;
+}
+.main {
+  position: relative;
+  bottom: 0.7em;
+}
+.drone-image {
+  width: 65%;
+  margin: 8% 0 0 19%;
+}
+.drone-img {
+  height: 67px;
+  border-radius: 50%;
+  position: relative;
+  left: 2%;
+}
+.footer-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid;
 }
-
-.App-link {
-  color: #61dafb;
+.material-1{
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 35px;
+    text-align: center;
+    color: #fff;
+    border-right : 1px solid;
+    font-size: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.material-2{
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 35px;
+    text-align: center;
+    color: #fff;
+    border-right : 1px solid;
+    font-size: 16px;
+}
+.material-3{
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 35px;
+    text-align: center;
+    color: #fff;
+    border-right : 1px solid;
+    font-size: 16px;
 }
