@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 * {
   padding: 0;
@@ -9,10 +9,16 @@
   box-sizing: border-box;
 }
 body {
-  background: #6c757d;
+  background: #000;
   -webkit-font-smoothing: antialiased;
   font-weight: bold !important;
   font-size: 14px;
+}
+.logoStyle {
+  height: 50px;
+}
+.nav-background {
+  background: #000;
 }
 .nav-item {
   font-family: "Ubuntu", sans-serif;
@@ -44,10 +50,10 @@ body {
   transition: 0.2s;
 }
 .nav-link:hover {
-  color: #8cc63f !important;
+  color: #ff0000 !important;
 }
 .active {
-  color: #8cc63f !important;
+  color: #ff0000 !important;
 }
 .number {
   letter-spacing: 3px;
@@ -70,11 +76,11 @@ body {
 }
 .main {
   position: relative;
-  bottom: 0.7em;
+  bottom: 3em;
 }
 .drone-image {
-  width: 65%;
-  margin: 8% 0 0 19%;
+  width: 78%;
+  margin: 2% 0 0 15%;
 }
 .drone-img {
   height: 67px;
@@ -89,27 +95,59 @@ body {
   flex-direction: row;
   border: 2px solid;
 }
-.material-1{
-    font-family: 'Quicksand', sans-serif;
-    padding: 10px 35px;
-    text-align: center;
-    color: #fff;
-    border-right : 1px solid;
-    font-size: 16px;
+.material-1 {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 35px;
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid;
+  font-size: 16px;
 }
-.material-2{
-    font-family: 'Quicksand', sans-serif;
-    padding: 10px 35px;
-    text-align: center;
-    color: #fff;
-    border-right : 1px solid;
-    font-size: 16px;
+.material-2 {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 35px;
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid;
+  font-size: 16px;
 }
-.material-3{
-    font-family: 'Quicksand', sans-serif;
-    padding: 10px 35px;
-    text-align: center;
-    color: #fff;
-    border-right : 1px solid;
-    font-size: 16px;
+.material-3 {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 35px;
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid;
+  font-size: 16px;
+}
+
+a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 280px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+li:hover ul.sub-menus {
+	display: block
+}
+ ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+.last{
+  width: 170px !important;
 }

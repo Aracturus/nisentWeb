@@ -1,10 +1,19 @@
 import React from "react";
-import mainimage from "./images/mainimage.png";
+import mainimage1 from "./images/mainimage1.png";
 import Mainfooter from "./Mainfooter";
 import drone01 from "./images/drone01.gif";
 const Main = () => {
   return (
     <>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 mx-auto">
+            <img className="drone-image" src={mainimage1} alt="Drone Picture" />
+          </div>
+        </div>
+      </div>
+
       <div className="container-fluid main">
         <div className = "d-flex justify-content-center align-items-center">
         <h1 className="text-center text-captialize main-heading display-1">
@@ -16,15 +25,6 @@ const Main = () => {
           Always within Earshot
         </h4>
       </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 mx-auto">
-            <img className="drone-image" src={mainimage} alt="Drone Picture" />
-          </div>
-        </div>
-      </div>
-
       <Mainfooter />
     </>
   );
