@@ -98,28 +98,31 @@ body {
   border: 2px solid;
 }
 .material-1 {
-  font-family: "Quicksand", sans-serif;
-  padding: 10px 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 50px -10px;
+  padding: 40px 65px;
   text-align: center;
   color: #fff;
   border-right: 1px solid;
-  font-size: 16px;
+  font-size: 18px;
 }
 .material-2 {
-  font-family: "Quicksand", sans-serif;
-  padding: 10px 35px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 50px 0px;
+  padding: 40px 85px;
   text-align: center;
   color: #fff;
   border-right: 1px solid;
-  font-size: 16px;
+  font-size: 18px;
 }
 .material-3 {
-  font-family: "Quicksand", sans-serif;
-  padding: 10px 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 50px 0px;
+  padding: 40px 65px;
   text-align: center;
   color: #fff;
   border-right: 1px solid;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a.dropdown-arrow:after {
@@ -166,4 +169,38 @@ li:hover ul.sub-menus {
 .nav-text-white{
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
+}
+
+
+.gy{
+  margin: 50px 30px;
+}
+.gy .leftside {
+  background: #000599;
+}
+.gy .rightside {
+  background: #006999;
+}
+.gy .leftside, .rightside {
+  color: rgba(255,255,255,.4);
+  padding: 2%;
+  text-align: left;
+}
+
+@media ( min-width : 600px ){
+gy {
+    background: linear-gradient(90deg, #000599 50%, #006999 50%);
+  }
+	.gy .flexbox {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+	}
+  .gy .leftside,
+  .rightside {
+    -webkit-flex: 1;
+    flex: 1;
+    background: none;
+  }
 }
