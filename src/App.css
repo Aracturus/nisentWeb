@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 * {
   padding: 0;
@@ -25,6 +25,7 @@ body {
 .nav-item {
   font-family: "Ubuntu", sans-serif;
 }
+
 .btn-style {
   background: #8cc63f;
   padding: 9px 40px;
@@ -32,6 +33,10 @@ body {
   color: #fff;
   font-weight: bold;
   transition: 0.3s;
+}
+.main-txt {
+  font-family: "Poppins", sans-serif;
+  color: #ff0000 !important;
 }
 .btn-style-btn {
   background: #8cc63f;
@@ -48,13 +53,10 @@ body {
   transform: scale(1.03);
 }
 .nav-link {
-  color: white !important;
+  color: #fff !important;
   transition: 0.2s;
 }
 .nav-link:hover {
-  color: #ff0000 !important;
-}
-.active {
   color: #ff0000 !important;
 }
 .number {
@@ -82,7 +84,9 @@ body {
 }
 .drone-image {
   width: 78%;
-  margin: 2% 0 0 15%;
+  margin-left: 15%;
+  position: relative;
+  bottom: 12px;
 }
 .drone-img {
   height: 67px;
@@ -98,27 +102,30 @@ body {
   border: 2px solid;
 }
 .material-1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 50px -10px;
-  padding: 40px 65px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 40px -10px;
+  padding: 10px 65px;
   text-align: center;
   color: #fff;
   border-right: 1px solid;
   font-size: 18px;
 }
 .material-2 {
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 50px 0px;
-  padding: 40px 85px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 40px 0px;
+  padding: 10px 85px;
   text-align: center;
   color: #fff;
   border-right: 1px solid;
   font-size: 18px;
 }
 .material-3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 50px 0px;
-  padding: 40px 65px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 40px 0px;
+  padding: 10px 65px;
   text-align: center;
   color: #fff;
   border-right: 1px solid;
@@ -126,53 +133,52 @@ body {
 }
 
 a.dropdown-arrow:after {
-	content: "\25BE";
-	margin-left: 5px;
+  content: "\25BE";
+  margin-left: 5px;
 }
-ul.sub-menus{
-	height: auto;
-	overflow: hidden;
-	width: 280px;
-	background: #444444;
-	position: absolute;
-	z-index: 99;
-	display: none;
+ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 280px;
+  background: #444444;
+  position: absolute;
+  z-index: 99;
+  display: none;
 }
 ul.sub-menus li {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 ul.sub-menus a {
-	color: #FFFFFF;
-	font-size: 16px;
+  color: #ffffff;
+  font-size: 16px;
 }
 li:hover ul.sub-menus {
-	display: block
+  display: block;
 }
- ul.sub-menus a:hover{
-	background: #F2F2F2;
-	color: #444444;
+ul.sub-menus a:hover {
+  background: #f2f2f2;
+  color: #444444;
 }
-.last{
+.last {
   width: 170px !important;
 }
 
-.over-text{
+.over-text {
   line-height: 2rem;
   font-size: 15px;
-  font-family: 'Ubuntu', sans-serif;  
-  color:  #57606f;
+  font-family: "Ubuntu", sans-serif;
+  color: #57606f;
   letter-spacing: 0.03rem;
   text-align: center;
   font-weight: lighter;
 }
-.nav-text-white{
+.nav-text-white {
   font-size: 16px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-
-.gy{
+.gy {
   margin: 50px 30px;
 }
 .gy .leftside {
@@ -181,26 +187,85 @@ li:hover ul.sub-menus {
 .gy .rightside {
   background: #006999;
 }
-.gy .leftside, .rightside {
-  color: rgba(255,255,255,.4);
+.gy .leftside,
+.rightside {
+  color: rgba(255, 255, 255, 0.4);
   padding: 2%;
   text-align: left;
 }
 
-@media ( min-width : 600px ){
-gy {
+@media (min-width: 600px) {
+  gy {
     background: linear-gradient(90deg, #000599 50%, #006999 50%);
   }
-	.gy .flexbox {
+  .gy .flexbox {
     width: 100%;
     margin: 0 auto;
     display: -webkit-flex;
     display: flex;
-	}
+  }
   .gy .leftside,
   .rightside {
     -webkit-flex: 1;
     flex: 1;
     background: none;
   }
+}
+.ProductPage {
+  height: 500vh;
+  width: auto;
+  background: #fff;
+  /* overflow: hidden; */
+}
+.navbar-active-class {
+  color: green;
+}
+.pContent {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  line-height: 2rem;
+  word-spacing: 0.1rem;
+}
+.ProductHeading4 {
+  color: #ff0000;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.ProductHeading1 {
+  font-family: "Ubuntu", sans-serif;
+}
+.ProductPara {
+  width: 90%;
+  font-family: "poppins", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  font-weight: lighter;
+  line-height: 1.9rem;
+}
+
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+  text-align: center;
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  text-align: center;
+  font-size: 18px;
+
 }

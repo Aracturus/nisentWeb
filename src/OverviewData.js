@@ -1,6 +1,5 @@
 import React from "react";
 import mainimage2 from "./images/mainimage2.png";
-import TechSpecs from "./TechSpecs";
 
 const OverviewData = () => {
   return (
@@ -10,17 +9,14 @@ const OverviewData = () => {
           Overview
         </h1>
         <div className="row">
-          <div className="col-md-5 mx-auto">
+          <div className="col-md-8 mx-auto">
             <div className="row">
               <p className="over-text">
-                RYNO is ideaForge’s micro category survey-grade drone designed
-                and specialized for mapping applications. It is equipped with an
-                advanced mapping payload and ideaForge’s state-of-the-art- PPK
-                module to deliver superior results. Due to its high accuracy in
-                mapping applications, it is the only micro category drone that
-                has been approved by the Survey of India (SOI) towards the
-                Swamitva Yojana, which is set to be one of the largest
-                drone-powered mapping projects in the world.
+                Trendius® CMX is an advanced wireless condition monitor designed
+                for high performance with precision in harsh indusrtial
+                environment. It detects equipment anomalies and incipient
+                failures preventing unplanned downtime, reducing maintenance
+                costs and improving productivity.
               </p>
             </div>
           </div>
@@ -33,7 +29,6 @@ const OverviewData = () => {
           style={{ position: "relative", left: "7%" }}
         />
       </div>
-      <TechSpecs />
     </>
   );
 };

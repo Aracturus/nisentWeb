@@ -1,17 +1,23 @@
 import React from "react";
 import logo from "./images/logo.png";
-import Main from "./Main";
+
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
       <div className="container-fluid px-5 py-3 nav-background">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <NavLink
+              className="navbar-brand"
+              activeClassName="navbar-active-class"
+              to="#"
+            >
               <div>
                 <img src={logo} alt="Home Logo" className="logoStyle" />
               </div>
-            </a>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -29,106 +35,118 @@ const Navbar = () => {
             >
               <ul className="navbar-nav mt-lg-4 mb-lg-0 w-100 d-flex justify-content-end">
                 <li className="nav-item ps-2">
-                  <a className="nav-link pe-5" href="#">
+                  <NavLink
+                    className="nav-link pe-5"
+                    to="/"
+                    activeClassName="active-navbar"
+                  >
                     Products
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item ps-2">
-                  <a className="nav-link pe-5" href="#">
+                  <NavLink
+                    className="nav-link pe-5"
+                    to="/Products"
+                    activeClassName="active-navbar"
+                  >
                     Digitalization
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item ps-2">
-                  <a className="nav-link pe-5 " href="#">
+                  <NavLink className="nav-link pe-5 " to="#">
                     Engineering
-                  </a>
+                  </NavLink>
                   <ul
                     className="sub-menus"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Engineering Services
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Rotor Dynamics
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Surge Dynamics
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Reverse Engineering
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Retrofit & upgrade
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item ps-2 pe-5">
-                  <a className="nav-link" href="#" data-bs-toggle="dropdown">
+                  <NavLink
+                    className="nav-link"
+                    to="#"
+                    data-bs-toggle="dropdown"
+                  >
                     Plant Services
-                  </a>
+                  </NavLink>
                   <ul className="sub-menus">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Operation and Maintanence
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Condition Monitoring
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Plant Turnaround
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Field Performance Test
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Engineered Spare Parts
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item ps-2 pe-5">
-                  <a className="nav-link" href="#">
+                  <NavLink className="nav-link" to="#">
                     Perspectives
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item ps-2">
-                  <a className="nav-link pe-5 me-lg--5 " href="#">
+                  <NavLink className="nav-link pe-5 me-lg--5 " to="#">
                     Company
-                  </a>
+                  </NavLink>
                   <ul className="sub-menus last">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         About Us
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Careers
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <NavLink class="dropdown-item" to="#">
                         Contact Us
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
@@ -137,7 +155,6 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-      <Main />
     </>
   );
 };
