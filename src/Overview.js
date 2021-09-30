@@ -1,12 +1,11 @@
 import React from "react";
-import OverviewData from "./OverviewData"
 
 const Overview = () => {
   return (
     <>
-      <div className="container-fluid"  style = {{background : "#dfe4ea"}}  >
-        <nav className = "navbar-nav navbar-expand-lg">
-          <ul className = "navbar navbar-nav w-75 mx-auto py-3 nav-text-white">
+      <div className="container-fluid" style={{ background: "#dfe4ea" }}>
+        <nav className="navbar-nav navbar-expand-lg">
+          <ul className="navbar navbar-nav w-75 mx-auto py-3 nav-text-white">
             <li>Overview</li>
             <li>Tech Specs</li>
             <li>Features</li>
@@ -19,8 +18,6 @@ const Overview = () => {
           </ul>
         </nav>
       </div>
-
-      <OverviewData/>
     </>
   );
 };
