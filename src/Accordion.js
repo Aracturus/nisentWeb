@@ -1,4 +1,9 @@
 import React from "react";
+import feature1 from "./images/feature1.png";
+import feature3 from "./images/feature3.png";
+import feature4 from "./images/feature4.png";
+import feature5 from "./images/feature5.png";
+import feature6 from "./images/feature6.png";
 
 const Accordion = () => {
   return (
@@ -297,35 +302,95 @@ const Accordion = () => {
         </div>
       </div>
 
-      <div className="container d-flex justify-content-center align-items-center mt-lg-4">
-        <p className="p-5" className="material-1">
-          upto <br /> <span style={{ fontSize: "30px" }}>2Km</span> <br />{" "}
-          Operational Range
-        </p>
-        <p className="p-5" className="material-2">
-          upto <br /> <span style={{ fontSize: "30px" }}>30Min</span> <br />{" "}
-          Flight Time
-        </p>
-        <p className="p-5" className="material-3">
-          upto <br /> <span style={{ fontSize: "30px" }}>6Kg</span> <br />{" "}
-          Take-off Weight
-        </p>
+      {/* cards data */}
+
+      <div className="container-fluid my-lg-5">
+        <div className="col-md-10 mx-auto">
+          <div className="row d-flex flex-wrap mx-auto">
+            <div className="feature-card gy-lg-3">
+              <img
+                src={feature1}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div>Industrial grade triaxial accelerometer</div>
+            </div>
+
+            <div className="feature-card gy-lg-3">
+              <img
+                src={feature3}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div>Ultrahigh frequency measurement range upto 6.5kHz</div>
+            </div>
+
+            <div className="feature-card gy-lg-3">
+              <img
+                src={feature4}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div style={{ border: "none" }}>
+                Ultarwide temperature range from -40 ° C to +105 °C.
+              </div>
+            </div>
+
+            <div className="feature-card gy-lg-3">
+              <img
+                src={feature5}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div>
+                Selectable wide vibration scale of ±2, ±4, ±8 and ±16 g.
+              </div>
+            </div>
+
+            <div className="feature-card gy-lg-3">
+              <img
+                src={feature6}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div>Microcontroller for edge computing and FFT analytics</div>
+            </div>
+
+            <div className="feature-card gy-lg-3">
+              <img
+                src={feature1}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div style={{ border: "none" }}>
+                Rugged stainless steel enclosure for harsh environment
+              </div>
+            </div>
+
+            <div className="py-lg-2 feature-card gy-lg-3">
+              <img
+                src={feature4}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div>
+                Battery and expernal power options for wide applications
+              </div>
+            </div>
+            <div className="feature-card gy-lg-3">
+              <img
+                src={feature1}
+                alt="picture"
+                style={{ width: "100%", position: "relative", bottom: "35px" }}
+              />
+              <div>
+                10 year design life and +3 year maintenance-free service
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="container d-flex justify-content-center align-items-center mt-lg-4">
-        <p className="p-5" className="material-1">
-          upto <br /> <span style={{ fontSize: "30px" }}>2Km</span> <br />{" "}
-          Operational Range
-        </p>
-        <p className="p-5" className="material-2">
-          upto <br /> <span style={{ fontSize: "30px" }}>30Min</span> <br />{" "}
-          Flight Time
-        </p>
-        <p className="p-5" className="material-3">
-          upto <br /> <span style={{ fontSize: "30px" }}>6Kg</span> <br />{" "}
-          Take-off Weight
-        </p>
-      </div>
       <div className="gy">
         <div class="flexbox">
           <div class="leftside">
