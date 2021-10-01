@@ -244,28 +244,38 @@ ul.sub-menus a:hover {
   line-height: 1.9rem;
 }
 
-
-table { 
-  width: 100%; 
-  border-collapse: collapse; 
-  font-family:Georgia, 'Times New Roman', Times, serif;
-   
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 /* Zebra striping */
-tr:nth-of-type(odd) { 
-  background: #eee; 
+tr:nth-of-type(odd) {
+  background: #eee;
 }
-th { 
-  background: #333; 
-  color: white; 
-  font-weight: bold; 
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
   text-align: center;
 }
-td, th { 
-  padding: 6px; 
-  border: 1px solid #ccc; 
-  text-align: left; 
+td,
+th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
   text-align: center;
   font-size: 18px;
-
+}
+.feature-card{
+  width: 32%;
+  border-right: 1px solid silver;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  font-weight: lighter;
+  
+}
+.feature-card div{
+  text-align: center;
 }
