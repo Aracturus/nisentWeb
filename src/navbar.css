@@ -1,0 +1,18 @@
+body{
+    color: #ff0000;
+}
+.navbar-menu{
+    font-size: 1.2rem;
+
+}
+.navbar-dropdown{
+    background-color: rgb(48, 44, 44);
+    font-size: 1.2rem;
+}
+.navbar-item , .navbar-link{
+    color: white;
+    text-decoration: none;
+}
+.navbar-item:hover{
+    background-color: #ff0000 !important;
+}
